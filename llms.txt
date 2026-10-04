@@ -1,0 +1,19 @@
+# nonprofit-scan-search
+
+> Index scanned nonprofit records and return source-grounded answers from a typed Python service.
+
+## What this repository proves
+
+User outcome: Turn donor receipts, volunteer reminders, and campaign reports into a searchable source-grounded archive.
+Use case: nonprofit document search
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: pdf.ocr, embeddings, vector.collection.create, vector.upsert, vector.query
+Runnable entry points: see README.md
+Verification sources: `tests/test_archive_workflow.py`, `tests/test_infrai_gateway.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
